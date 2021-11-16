@@ -1,4 +1,5 @@
 source "http://rubygems.org"
 
-gem "sinatra", "1.3.1"
-gem "oauth",   "0.4.5"
+gem "sinatra", "~>2.1"
+gem "webrick"
+gem "oauth",  ">0.5"

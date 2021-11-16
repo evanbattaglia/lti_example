@@ -65,7 +65,7 @@ end
 get "/assessment" do
   # first make sure they got here through a tool launch
   unless session['lis_result_sourcedid']
-    return %{You need to take this assessment through Canvas.}
+    return %{You need to take this assessment through Canvas. (Since this uses a session, this may also indicate issues with setting cookies)}
   end
 
   # now render a simple form the user will submit to "take the quiz"
